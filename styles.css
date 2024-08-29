@@ -1,9 +1,7 @@
-/* styles.css */
-
 /* General body styling */
 body {
-    background-color: #FFFFFF; /* White */
-    color: #333; /* Dark gray for text */
+    background-color: #0a192f; /* Dark Blue */
+    color: #f5f5f5; /* Whiter text */
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -12,24 +10,41 @@ body {
 
 /* Header styling */
 header {
-    background-color: #FFFFFF; /* White */
-    color: #333;
-    text-align: center;
-    padding: 50px 0;
-    border-bottom: 1px solid #eee; /* Subtle border for separation */
+    background-color: #0a192f; /* Dark Blue */
+    color: #f5f5f5;
+    padding: 50px 50px; /* Increased padding from left */
     margin-bottom: 60px; /* Space for the sticky navbar */
 }
 
-.header-content img {
-    border-radius: 50%; /* Circular profile image */
-    border: 3px solid #A17CC2; /* Primary Purple accent */
-    width: 200px; /* Increased size for better visibility */
-    height: 200px; /* Ensure the aspect ratio remains square */
+.header-content {
+    max-width: 600px; /* Limit the width to prevent text from extending too far */
+    margin: 0 0 0 50px; /* Increased left margin */
+    text-align: left; /* Left-align text */
 }
 
-.header-content h1, .header-content p {
-    margin: 0;
-    padding: 0;
+.header-content p {
+    font-size: 1.5em; /* Increase font size */
+    margin: 15px 0;
+}
+
+.header-content .greeting {
+    font-size: 3em; /* Larger font size for greeting */
+    margin-bottom: 20px;
+    display: inline-block;
+    color: #f5f5f5; /* Whiter text */
+
+}
+
+.header-content .greeting .wave {
+    font-size: 1.2em; /* Larger size for the wave emoji */
+    margin-left: 5px;
+}
+
+.header-content .intro {
+    font-size: 2em; /* Increased font size for introduction */
+    line-height: 1.8;
+    color: #f5f5f5; /* Whiter text */
+
 }
 
 /* Navigation menu styling */
@@ -37,8 +52,8 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #FFFFFF; /* White */
-    border-bottom: 1px solid #eee;
+    background-color: #0a192f; /* Dark Blue */
+    border-bottom: 1px solid #233554;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000; /* Ensure it stays on top of other content */
     text-align: center;
@@ -58,7 +73,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #A17CC2; /* Primary Purple for links */
+    color: #f5f5f5; /* Whiter text */
     font-weight: bold;
     padding: 5px 10px;
     border: 1px solid transparent;
@@ -66,14 +81,106 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    border: 1px solid #A17CC2; /* Underline effect on hover */
+    border: 1px solid #f5f5f5; /* Underline effect on hover */
 }
+
+
+/* Background Section Styling */
+#content {
+    padding: 40px 0;
+    margin-bottom: 60px;
+    color: #f5f5f5; /* Whiter text */
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-title {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.content-title h2 {
+    color: #0a75c2; /* Blue color for the title */
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-orientation: mixed;
+    margin: 0;
+}
+
+.content-content {
+    flex: 2;
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-width: 700px;
+}
+
+.content-content p {
+    margin: 24px 0;
+}
+
+.content-content b {
+    color: #0a75c2;
+}
+
+/* Experience specific styling */
+.experience-item {
+    margin-bottom: 30px;
+}
+
+.experience-item h3 {
+    font-size: 0.75em;
+    color: #f5f5f5; /* Whiter text */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.experience-item p {
+    font-size: 0.75em;
+    line-height: 1.6;
+    color: #f5f5f5; /* Whiter text */
+    margin: 0;
+}
+.experience-item a {
+    font-size: 0.75em;
+    line-height: 1.6;
+    color: #f5f5f5; /* Whiter text */
+    margin: 0;
+}
+
+.experience-item p::before {
+    content: '';
+    display: block;
+    height: 10px; /* Space between company name and role */
+}
+
+.more-button {
+    text-align: center; /* Align to the left */
+    margin: 50px 0; /* Add spacing around the button */
+}
+
+.more-button a {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #0a75c2; /* Blue color for the button text */
+}
+
+
 
 /* Main content styling */
 main {
     padding: 20px;
-    max-width: 800px;
+    max-width: 900px;
     margin: 40px auto;
+    color: #f5f5f5; /* Whiter text */
 }
 
 section {
@@ -81,34 +188,173 @@ section {
 }
 
 h2 {
-    color: #333;
-    border-bottom: 2px solid #eee;
+    color: #f5f5f5; /* Whiter text */
+    border-bottom: 2px solid #233554;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
 h3 {
-    color: #A17CC2; /* Primary Purple for section headers */
+    color: #f5f5f5; /* Whiter text for section headers */
     margin-top: 0;
 }
 
 p, .project-item p {
-    color: #555; /* Lighter gray for body text */
+    color: #fafafa; /* Whiter text */
+    font-size: 0.75em
+}
+/* Portfolio Section Styling */
+#portfolio {
+    padding: 60px 0;
+    background-color: #0a192f; /* Dark Blue */
 }
 
-.project-item, .experience-item, .achievement-item, .leadership-item {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 250px; /* Set a fixed height for each item */
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; /* Ensure the image covers the entire area without distortion */
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 25, 47, 0.7); /* Dark overlay */
+    color: #f5f5f5; /* Whiter text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+    text-align: center;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-title {
+    font-size: 1em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.portfolio-subtitle {
+    font-size: 0.75em;
+    margin: 0;
+    font-style: italic;
+    text-align:center;
+}
+
+/* Project Section Styling */
+#projects {
+    padding: 60px 0;
+    background-color: #0a192f; /* Dark Blue */
+}
+
+.project-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Space between projects */
+}
+
+.project-item {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between image and details */
+    background-color: #112240; /* Slightly lighter blue for contrast */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-item img {
+    width: 40%; /* Set width of the image */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.project-details {
+    flex: 1;
+    color: #f5f5f5; /* Whiter text */
+}
+
+.project-details h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #0a75c2; /* Blue color for the title */
+}
+
+.project-details h3 a {
+    text-decoration: none; /* Remove underline */
+    color: #0a75c2; /* Blue color for the title */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.project-details h3 a:hover {
+    color: #1fb6ff; /* Lighter blue on hover */
+}
+
+.project-details h4 {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    font-style: italic;
+    color: #f5f5f5; /* Whiter text */
+}
+
+.project-details p {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #f5f5f5; /* Whiter text */
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    .project-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-item img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
 
 /* Footer styling */
 footer {
-    background-color: #FFFFFF; /* White */
-    color: #777;
+    background-color: #0a192f; /* Dark Blue */
+    color: #f5f5f5; /* Whiter text */
     text-align: center;
     padding: 20px 0;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #233554;
     font-size: 0.9em;
 }
 
@@ -119,60 +365,10 @@ footer {
 }
 
 .social-media a {
-    color: #333;
+    color: #f5f5f5; /* Whiter text */
     text-decoration: none;
 }
 
 .social-media a:hover {
-    color: #A17CC2;
-}
-
-/* Button styling */
-.read-more-btn {
-    background-color: #A17CC2; /* Primary Purple */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.read-more-btn:hover {
-    background-color: #895ca8; /* Darker shade for hover effect */
-}
-
-/* Image Grid styling */
-#image-grid {
-    margin: 60px 0;
-    text-align: center;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 1000px;
-}
-
-.grid-item {
-    overflow: hidden;
-    border: 2px solid #eee; /* Light gray border */
-    border-radius: 10px;
-}
-
-.grid-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.grid-item:hover img {
-    transform: scale(1.1);
+    color: #f5f5f5;
 }
