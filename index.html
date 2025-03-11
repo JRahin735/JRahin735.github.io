@@ -1,175 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rahin Jain - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a> |
+        <a href="#about">Projects</a> |
+        <a href="#projects">Contact</a> |
+        <a href="https://docs.google.com/document/d/1hs5q7yZegQMl2N3lbUw-YM56kZpPCYabzYlngYg8QCw/edit?usp=sharing"target="_blank">Resume</a>
+    </nav>
+
     <header>
-        <div class="header-content">
-            <div class="text-content">
-                <br><br><br>
-                <br><br><br>
-                <p class="greeting">Hello! <span class="wave">👋</span></p>
-                <p class="intro">
-                    I'm <b>Rahin Jain</b>. A data scientist, trying to make sense of the world with numbers. <br> <br> 
-                    Get in touch 👉 rahinjain1@gmail.com
-                </p>
-                <br><br><br><br>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/rahinj/" target="_blank">
-                        <img src="images/ln.png" alt="LinkedIn" class="social-icon">
-                    </a>
-                    <a href="https://github.com/JRahin735" target="_blank">
-                        <img src="images/gh.png" alt="GitHub" class="social-icon">
-                    </a>
-                    <a href="https://medium.com/@rahinjain1" target="_blank">
-                        <img src="images/md.png" alt="Medium" class="social-icon">
-                    </a>
-                    <a href="https://www.instagram.com/rahinjain/" target="_blank">
-                        <img src="images/ig.png" alt="Instagram" class="social-icon">
-                    </a>
-                </div>
-                <br><br><br>
+        <h1>Rahin <span class="highlight">Jain</span></h1>
+        <div class="header-bottom">
+            <div class="text-box">
+                <p>Consulting and Analytics. </p>
+                <p> Incoming Master of Business Analytics student at the Stephen M. Ross School of Business, University of Michigan. Currently completing my graduation at the Univerity of Illinois Chicago (May 2025). </p>
+                <p>Get in touch 👉 rahinjain1@gmail.com</p>
             </div>
+            <img src="images/profile_pic.png" alt="Rahin Jain" class="profile-pic">
         </div>
     </header>
+
+    <div class="banner-image">
+        <img src="images/uic_banner.jpeg" alt="Portfolio Banner">
+    </div>
+
     
-    <!-- Light/Dark Mode Toggle Button -->
-    <button id="theme-toggle" aria-label="Toggle Light/Dark Mode">🌙</button>
-
-    <main>
-        <section class="skills" id="skills">
-            <h2>Skills</h2>
-            <div class="tech-items">
-                <span class="tech-item">MySQL</span>
-                <span class="tech-item">MongoDB</span>
-                <span class="tech-item">Google Cloud Platform</span>
-                <span class="tech-item">Python</span>
-                <span class="tech-item">R</span>
-                <span class="tech-item">PowerBI</span>
-                <span class="tech-item">Jira</span>
-                <span class="tech-item">Excel</span>
-                <span class="tech-item">Google Earth Engine</span>
-                <span class="tech-item">GitHub</span>
-            </div>
-        </section>
+    <section class="projects">
+        <h2>Featured Projects</h2>
     
-        <section class="experience">
-            <h2>Experience</h2>
-            <div class="experience-cards">
-
-                <div class="experience-card">
-                    <h3>Undergraduate Teaching Assistant</h3>
-                    <p class="company">Computer Science Department @University of Illinois | Chicago, Illinois</p>
-                    <p class="duration">January 2023 - Present</p>
-                    <p class="description">
-                        Provide support to the Database Systems course (UIC CS480) for Prof. David Hayse
-                    </p>
-                    <h4>Main Responsibilities</h4>
-                    <ul>
-                        <li>Help students with individual database projects and assignments</li>
-                        <li>Provide feedback on ideation and designs</li>
-                        <li>Host projects on cloud platforms</li>
-                        <li>Help host MongoDB databases</li>
-                        <li>Assist with setting up procedures and debugging</li>
-                    </ul>
-                    <h4>Tech Stack</h4>
-                    <div class="tech-stack">
-                        <span class="tech-item">MySQL</span>
-                        <span class="tech-item">MongoDB</span>
-                        <span class="tech-item">Google Cloud Platform</span>
-                        <span class="tech-item">GitHub</span>
-                        <span class="tech-item">Excel</span>
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-text">
+                    <h3>Project 1: Data Analysis Dashboard</h3>
+                    <p>A dynamic dashboard for visualizing key business metrics with interactive charts and insights.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/your_project_link" target="_blank">GitHub</a> |
+                        <a href="https://your_project_demo.com" target="_blank">Live Demo</a>
                     </div>
                 </div>
-
-                <div class="experience-card">
-                    <h3>Business Analyst Intern</h3>
-                    <p class="company">Lyxar India | New Delhi, India</p>
-                    <p class="duration">May 2024 - August 2024</p>
-                    <p class="description">
-                        Provided support to logistics and finance department by performing analysis on financial data
-                    </p>
-                    <h4>Main Responsibilities</h4>
-                    <ul>
-                        <li>Worked on setting up a new PowerBI dashboard</li>
-                        <li>Data entry on MS Excel and new dashboard</li>
-                        <li>Created visualizations of results related to procurement cost</li>
-                    </ul>
-                    <h4>Tech Stack</h4>
-                    <div class="tech-stack">
-                        <span class="tech-item">PowerBI</span>
-                        <span class="tech-item">Excel</span>
-                    </div>
-                </div>
-
-                <div class="experience-card">
-                    <h3>Research Assistant</h3>
-                    <p class="company">Student Affairs @University of Illinois | Chicago, illinois</p>
-                    <p class="duration">July 2023 - May 2024</p>
-                    <p class="description">
-                        Researched on student population at University of Illinois to find issues with campus services
-                    </p>
-                    <h4>Main Responsibilities</h4>
-                    <ul>
-                        <li>Assited with Student Sense of Belonging Study Report.</li>
-                        <li>Presented the research at the UIC Undergrad Research Forum.</li>
-                        <li>Presented the research at UIC Impact.</li>
-                        <li>Created visualizations to present issues and challenges.</li>
-                    </ul>
-                    <h4>Tech Stack</h4>
-                    <div class="tech-stack">
-                        <span class="tech-item">Excel</span>
-                    </div>
-                    <h4>External Links</h4>
-                    <div class="external-links">
-                        <a href="https://issuu.com/nchung4uicedu/docs/commuter_student_sense_of_belonging_report" class="link-item" target="_blank">Report</a>
-                        <a href="https://uofi.app.box.com/s/o7a6ijif2kocy0gz8j9vtqnbmv54i5v5" class="link-item" target="_blank">UIC URF</a>
-                        <a href="https://impact.uic.edu/events/uic-impact-day-spring-2024/?trk=public_post_reshare-text" class="link-item" target="_blank">UIC Impact</a>
-                    </div>
-                </div>
-
+                <img src="images/project1.jpg" alt="Project 1 Image">
             </div>
-        </section>
-        
-
-        <section class="fun-section">
-            <h2>Fun Section</h2>
-            <p>Here are some snapshots of my favorite moments and things I enjoy! (and some brainrot)</p>
-            <div class="media-gallery">
-                <div class="image-gallery">
-                    <img src="images/advisor.jpeg" alt="Fun Image 1" class="gallery-image">
-                    <img src="images/mentor.jpg" alt="Fun Image 2" class="gallery-image">
-                    <img src="images/raoperations.jpg" alt="Fun Image 3" class="gallery-image">
-                    <img src="images/sparkhacks.jpeg" alt="Fun Image 4" class="gallery-image">
-                    <img src="images/ta.jpg" alt="Fun Image 5" class="gallery-image">
-                    <img src="images/headshot.jpeg" alt="Fun Image 6" class="gallery-image">
+        </div>
+    
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-text">
+                    <h3>Project 2: Machine Learning Model</h3>
+                    <p>Trained a predictive model that forecasts sales using advanced regression techniques.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/your_project_link" target="_blank">GitHub</a> |
+                        <a href="https://your_project_demo.com" target="_blank">Live Demo</a>
+                    </div>
                 </div>
-                <div class="video-embed">
-                    <iframe 
-                        src="https://drive.google.com/file/d/1x5zr4GMY3F-jveJ6w_92ecf6BKpFH4AF/preview" 
-                        title="Brainrot Resume" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-                </div>            
+                <img src="images/project2.jpg" alt="Project 2 Image">
             </div>
-        </section>
-    </main>
+        </div>
+    
+        <div class="project-card">
+            <div class="project-content">
+                <div class="project-text">
+                    <h3>Project 3: NLP Sentiment Analysis</h3>
+                    <p>Built a sentiment analysis model that identifies customer emotions from text data.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/your_project_link" target="_blank">GitHub</a> |
+                        <a href="https://your_project_demo.com" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+                <img src="images/project3.jpg" alt="Project 3 Image">
+            </div>
+        </div>
+    </section>
+    
 
-    <footer>
-        <div class="footer-content">
-            <p>If I'm not working, you can find me watching anime, exploring new places, cooking, or working towards my bucket list.</p>
-            <p>Developed with care by Rahin Jain, 2024</p>
+
+    <section class="gallery">
+        <div class="gallery-container">
+            <img src="images/advisor.jpeg" alt="Gallery Image 1">
+            <img src="images/extra.jpg" alt="Gallery Image 2">
+            <img src="images/raoperations.jpg" alt="Gallery Image 3">
+            <img src="images/sparkhacks.jpeg" alt="Gallery Image 4">
+            <img src="images/ta.jpg" alt="Gallery Image 5">
+        </div>
+    </section>
+    
+
+    <h2>Education</h2>
+    <section class="education">
+        <div class="education-section">
+            <a href="https://cs.uic.edu/" target="_blank">
+                <img src="images/uic.png" alt="University of Illinois Chicago">
+            </a>
+            <div class="description">Bachelor of Science in Computer Science</div>
+            <div class="description">August 2022 - May 2025</div>
+        </div>
+    
+        <div class="education-section">
+            <a href="https://michiganross.umich.edu/" target="_blank">
+                <img src="images/umich.png" alt="University of Michigan">
+            </a>
+            <div class="description">Master of Business Analytics</div>
+            <div class="description">Expected Graduation: May 2026</div>
+        </div>
+    </section>
+  
+    
+    
+    <footer class="footer">
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/rahinj/" target="_blank">
+                <img src="images/linkedin_logo.png" alt="LinkedIn">
+            </a>
+            <a href="mailto:your.rahinjain1@gmail.com">
+                <img src="images/Gmail_Logo_128px.png" alt="Email">
+            </a>
+            <a href="https://github.com/JRahin735" target="_blank">
+                <img src="images/github-mark.png" alt="GitHub">
+            </a>
+            <a href="https://medium.com/@rahinjain1" target="_blank">
+                <img src="images/Medium-Icon-Black.png" alt="Medium">
+            </a>
+            <a href="https://www.instagram.com/rahinjain/" target="_blank">
+                <img src="images/Instagram_Glyph_Black.png" alt="Instagram">
+            </a>
+        </div>
+        <div class="copyright">
+            © Rahin Jain, 2025
         </div>
     </footer>
-
-<script src="script.js"></script>
+    
+    
 </body>
-
 </html>
