@@ -15,3 +15,4 @@ themeToggle.addEventListener('click', () => {
     themeToggle.textContent = currentTheme === 'light-mode' ? '🌞' : '🌙';
     localStorage.setItem('theme', currentTheme);
 });
+
